@@ -5,4 +5,6 @@ using StaticArrays
 
 include("PLAYPAL.jl")
 
+include("PATCH.jl")
+
 end # module DoomBase
