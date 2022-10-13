@@ -21,6 +21,10 @@ function Palette(colors::Vector{UInt8})
     return Palette(SizedVector{ncolors}(color_vec))
 end
 
+function color_from_palette(p::Palette, idx)
+    return p.colors[idx + 1] # idx starts from 0, Julia indexes from 0
+end
+
 struct PLAYPAL
     palettes::NTuple{14, Palette}
 end
