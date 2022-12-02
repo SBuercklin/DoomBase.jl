@@ -7,4 +7,6 @@ include("PLAYPAL.jl")
 
 include("DoomGraphic.jl")
 
+include("Map.jl")
+
 end # module DoomBase
